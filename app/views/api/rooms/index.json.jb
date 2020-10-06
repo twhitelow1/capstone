@@ -1,9 +1,11 @@
 # app/views/api/photos/index.json.jb
 @rooms.map do |room|
   {
+    room_id: room.id,
     name: room.name,
     house_id: room.house_id,
     room_type: room.room_type,
+    floor: room.floor,
     privacy: room.privacy,
   }
 end

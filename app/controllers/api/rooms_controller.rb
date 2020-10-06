@@ -9,7 +9,7 @@ class Api::RoomsController < ApplicationController
       name: params[:name],
       house_id: params[:house_id],
       room_type: params[:room_type],
-      user_id: params[:user_id],
+      floor: params[:floor],
       privacy: params[:privacy],
     )
     if room.save
