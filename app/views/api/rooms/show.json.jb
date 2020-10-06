@@ -1,0 +1,7 @@
+# app/views/api/photos/show.json.jb
+{
+  name: @room.name,
+  house_id: @room.house_id,
+  room_type: @room.room,
+  privacy: @room.privacy,
+}

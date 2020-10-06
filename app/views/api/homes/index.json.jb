@@ -1,0 +1,8 @@
+# app/views/api/photos/index.json.jb
+@homes.map do |home|
+  {
+    address: home.address,
+    home_type: home.home_type,
+    user_id: home.user_id,
+  }
+end
