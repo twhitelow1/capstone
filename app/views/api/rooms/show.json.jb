@@ -1,6 +1,6 @@
 # app/views/api/photos/show.json.jb
 {
-  room_id: @room.id,
+  id: @room.id,
   name: @room.name,
   house_id: @room.house_id,
   room_type: @room.room,
