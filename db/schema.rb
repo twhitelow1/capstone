@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_160943) do
   create_table "chores", force: :cascade do |t|
     t.string "title"
     t.string "desc"
-    t.integer "time_till_repeat"
+    t.integer "frequency"
     t.datetime "last_completed"
     t.integer "points_gain"
     t.integer "points_price"
