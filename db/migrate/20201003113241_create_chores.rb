@@ -3,7 +3,7 @@ class CreateChores < ActiveRecord::Migration[6.0]
     create_table :chores do |t|
       t.string :title
       t.string :desc
-      t.integer :hours_till_repeat
+      t.integer :frequency
       t.datetime :last_completed
       t.integer :points_gain
       t.integer :points_price

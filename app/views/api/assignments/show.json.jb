@@ -1,0 +1,9 @@
+# app/views/api/photos/show.json.jb
+{
+  id: @assignment.id,
+  chore_id: @assignment.chore_id,
+  user_id: @assignment.user_id,
+  date_due: @assignment.date_due,
+  completed: @assignment.completed,
+  assigner_id: @assignment.assigner_id,
+}

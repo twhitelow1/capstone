@@ -15,6 +15,12 @@ Rails.application.routes.draw do
     post "/rooms" => "rooms#create"
 
     get "/chores" => "chores#index"
-    post "chores" => "chores#create"
+    post "/chores" => "chores#create"
+
+    get "/assignments" => "assignments#index"
+    post "/assignments" => "assignments#create"
+    get "/assignments/:id" => "assignments#show"
+    patch "/assignments/:id" => "assignments#update"
+    delete "/assignments/:id" => "assignments#destroy"
   end
 end

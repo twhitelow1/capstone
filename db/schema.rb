@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_160943) do
   create_table "assignments", force: :cascade do |t|
     t.integer "chore_id"
     t.integer "user_id"
-    t.date "date_due"
+    t.datetime "date_due"
     t.boolean "completed"
     t.integer "assigner_id"
     t.datetime "created_at", precision: 6, null: false
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_160943) do
   create_table "chores", force: :cascade do |t|
     t.string "title"
     t.string "desc"
-    t.integer "hours_till_repeat"
+    t.integer "time_till_repeat"
     t.datetime "last_completed"
     t.integer "points_gain"
     t.integer "points_price"
@@ -39,7 +39,12 @@ ActiveRecord::Schema.define(version: 2020_10_06_160943) do
 
   create_table "homes", force: :cascade do |t|
     t.integer "user_id"
-    t.string "address"
+    t.integer "addr_number"
+    t.string "addr_street"
+    t.string "addr_unit"
+    t.string "addr_city"
+    t.string "addr_state"
+    t.string "addr_zip"
     t.string "home_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

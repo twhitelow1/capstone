@@ -1,0 +1,9 @@
+{
+  id: @chore.id,
+  title: @chore.title
+  desc: @chore.desc,
+  frequency: @chore.frequency,
+  points_gain: @chore.points_gain,
+  points_price: @chore.points_price,
+  assigner_id: @chore.assigner_id,
+}
