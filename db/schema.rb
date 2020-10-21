@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_160943) do
     t.integer "chore_id"
     t.integer "user_id"
     t.datetime "date_due"
-    t.boolean "completed"
+    t.datetime "complete_date"
     t.integer "assigner_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_160943) do
 
   create_table "rooms", force: :cascade do |t|
     t.string "name"
-    t.integer "house_id"
+    t.integer "home_id"
     t.integer "floor"
     t.string "room_type"
     t.string "privacy"
