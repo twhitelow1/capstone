@@ -3,7 +3,7 @@
   {
     id: room.id,
     name: room.name,
-    house_id: room.house_id,
+    home_id: room.home_id,
     room_type: room.room_type,
     floor: room.floor,
     privacy: room.privacy,

@@ -8,6 +8,7 @@ class CreateChores < ActiveRecord::Migration[6.0]
       t.integer :points_gain
       t.integer :points_price
       t.integer :room_id
+      t.boolean :currently_assigned, default: false
 
       t.timestamps
     end

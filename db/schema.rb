@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2020_10_06_160943) do
     t.integer "points_gain"
     t.integer "points_price"
     t.integer "room_id"
+    t.boolean "currently_assigned", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

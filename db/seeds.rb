@@ -21,10 +21,10 @@ Room.create(name: "main room", home_id: 1, floor: 1, room_type: "living room", p
 Room.create(name: "Todd & Kiya's Room", home_id: 1, floor: -1, room_type: "kitchen", privacy: "private")
 Room.create(name: "Jason's Room", home_id: 1, floor: -1, room_type: "kitchen", privacy: "private")
 
-Chore.create(title: "clean fridge", desc: "pull out all the drawers", frequency: 720, last_completed: 1.day.ago, points_gain: 20, points_price: 100, room_id: 1)
-Chore.create(title: "mop floors", desc: "mop around the toilet", frequency: 48, last_completed: 1.day.ago, points_gain: 20, points_price: 100, room_id: 2)
-Chore.create(title: "take out trash", desc: "dont forget to put it in the right place", frequency: 24, last_completed: 1.day.ago, points_gain: 20, points_price: 100, room_id: 1)
-Chore.create(title: "Dishes", desc: "make sure you clean all of the food off the plates before loading in dishwasher", frequency: 24, last_completed: 1.day.ago, points_gain: 50, points_price: 150, room_id: 1)
+Chore.create(title: "clean fridge", desc: "pull out all the drawers", frequency: 720, last_completed: 1.day.ago, points_gain: 20, points_price: 100, room_id: 1, currently_assigned: true)
+Chore.create(title: "mop floors", desc: "mop around the toilet", frequency: 48, last_completed: 1.day.ago, points_gain: 20, points_price: 100, room_id: 2, currently_assigned: true)
+Chore.create(title: "take out trash", desc: "dont forget to put it in the right place", frequency: 24, last_completed: 1.day.ago, points_gain: 20, points_price: 100, room_id: 1, currently_assigned: true)
+Chore.create(title: "Dishes", desc: "make sure you clean all of the food off the plates before loading in dishwasher", frequency: 24, last_completed: 1.day.ago, points_gain: 50, points_price: 150, room_id: 1, currently_assigned: true)
 
 Assignment.create(chore_id: 1, user_id: 1, date_due: 1.day.ago, complete_date: 3.days.ago, assigner_id: 2)
 Assignment.create(chore_id: 2, user_id: 1, date_due: 1.day.ago, complete_date: 3.days.ago, assigner_id: 1)

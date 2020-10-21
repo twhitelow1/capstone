@@ -9,19 +9,19 @@ Rails.application.routes.draw do
     post "/sessions" => "sessions#create"
 
     post "/homes" => "homes#create"
-    get "/homes" => "homes#index"
     get "/homes/:id" => "homes#show"
+    # update "/homes/:id" => "homes#update"
 
     get "/rooms" => "rooms#index"
     post "/rooms" => "rooms#create"
 
     get "/chores" => "chores#index"
     post "/chores" => "chores#create"
+    # update "/chores" => "chores#update"
 
     get "/assignments" => "assignments#index"
     post "/assignments" => "assignments#create"
     get "/assignments/:id" => "assignments#show"
     patch "/assignments/:id" => "assignments#update"
-    delete "/assignments/:id" => "assignments#destroy"
   end
 end
