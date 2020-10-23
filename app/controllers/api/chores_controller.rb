@@ -8,7 +8,7 @@ class Api::ChoresController < ApplicationController
     chore = Chore.new(
       title: params[:title],
       desc: params[:desc],
-      hours_till_repeat: params[:hours_till_repeat],
+      frequency: params[:frequency],
       last_completed: params[:last_completed],
       points_gain: params[:points_gain],
       points_price: params[:points_price],

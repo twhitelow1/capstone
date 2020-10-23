@@ -8,5 +8,6 @@
     points_gain: chore.points_gain,
     points_price: chore.points_price,
     room_id: chore.room_id,
+    currently_assigned: chore.currently_assigned,
   }
 end

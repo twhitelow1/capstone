@@ -2,8 +2,8 @@
 @assignments.map do |assignment|
   {
     id: assignment.id,
-    chore_id: assignment.chore_id,
-    user_id: assignment.user_id,
+    chore: assignment.chore,
+    user: assignment.user,
     date_due: assignment.date_due,
     completed: assignment.complete_date,
     assigner_id: assignment.assigner_id,
